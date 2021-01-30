@@ -1,0 +1,9 @@
+
+${AnsiColor.BRIGHT_BLACK}────────────────────────────────────────────────────
+${AnsiColor.BRIGHT_RED} █▀▀▀█ █  █ █▀▀▀█ █▀▀█ █▀▀█ ▀█▀ █▄  █ █▀▀█ ${AnsiColor.WHITE}    ${AnsiColor.BRIGHT_BLACK} █▀▀█ █▀▀█ █▀▀█ ▀▀█▀▀
+${AnsiColor.BRIGHT_RED} ▀▀▀▄▄ █▀▀█ █   █ █▄▄█ █▄▄█  █  █ █ █ █ ▄▄ ${AnsiColor.WHITE} ▀▀ ${AnsiColor.BRIGHT_BLACK} █    █▄▄█ █▄▄▀   █
+${AnsiColor.BRIGHT_RED} █▄▄▄█ █  █ █▄▄▄█ █    █    ▄█▄ █  ▀█ █▄▄█ ${AnsiColor.WHITE}    ${AnsiColor.BRIGHT_BLACK} █▄▄█ █  █ █  █   █
+${AnsiColor.BRIGHT_BLACK}────────────────────────────────────────────────────
+${AnsiStyle.NORMAL}Copyrigth ${AnsiStyle.BOLD}@2020${AnsiStyle.NORMAL}. World office, ${AnsiStyle.ITALIC}Todos los derechos reservados.${AnsiStyle.NORMAL}
+Versión: ${AnsiStyle.BOLD}${spring.application.version}
+${AnsiStyle.NORMAL}

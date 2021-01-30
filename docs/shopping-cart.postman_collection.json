@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "f4571f7d-2b30-4148-b9c3-d009756178eb",
+		"name": "shopping-cart",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/world-office-api/shoppingCart/v1/product?size=2&page=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"world-office-api",
+						"shoppingCart",
+						"v1",
+						"product"
+					],
+					"query": [
+						{
+							"key": "size",
+							"value": "2"
+						},
+						{
+							"key": "page",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Cart Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/world-office-api/shoppingCart/v1/cart/get/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"world-office-api",
+						"shoppingCart",
+						"v1",
+						"cart",
+						"get",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Cart Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/world-office-api/shoppingCart/v1/cart/add/product/9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"world-office-api",
+						"shoppingCart",
+						"v1",
+						"cart",
+						"add",
+						"product",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Cart Products",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/world-office-api/shoppingCart/v1/cart/delete/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"world-office-api",
+						"shoppingCart",
+						"v1",
+						"cart",
+						"delete",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buy Cart Products",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/world-office-api/shoppingCart/v1/cart/buy/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"world-office-api",
+						"shoppingCart",
+						"v1",
+						"cart",
+						"buy",
+						"products"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

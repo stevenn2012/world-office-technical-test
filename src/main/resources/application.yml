@@ -1,0 +1,50 @@
+server:
+  port: 8080
+  compression:
+    enabled: true
+  error:
+    include-stacktrace: never
+    whitelabel:
+      enabled: false
+
+logging:
+  level:
+    root: info
+    org.springframework: info
+    co.com.worldoffice: info
+
+spring:
+  application:
+    name: shoppingCart
+    version: v1.0.0
+    log: ./logs/
+    restPort: ${server.port}
+    root: /world-office-api/${spring.application.name}/v1
+
+    services:
+      findProductsPath: /product
+      addProductToCartPath: /cart/add/product/{productId}
+      getCartProductsPath: /cart/get/products
+      cleanCartPath: /cart/delete/products
+      buyCartProductsPath: /cart/buy/products
+
+  messages:
+    encoding: UTF-8
+  output:
+    ansi:
+      enabled: always
+  main:
+    banner-mode: log
+  thymeleaf:
+    encoding: UTF-8
+    prefix: classpath:/static/
+
+  datasource:
+    url: jdbc:h2:mem:./biblioteca
+  jpa:
+    hibernate:
+      ddl-auto: create
+
+properties:
+  upload-products-runner:
+    initialProductsFilePath: /Productos.csv
